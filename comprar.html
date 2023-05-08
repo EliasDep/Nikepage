@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nike</title>
+    <link rel="stylesheet" type="text/css" href="Estilos/estilosComprar.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+
+<body>
+
+    <section>
+
+        <!-- MENU NAVEGACION-->
+        <header>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="nike"></a>
+
+            <nav class="nav_links">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="comprar.html">Comprar</a></li>
+                    <li><a href="sesion.html">Sesion</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <div class="titulo">NIKE AIR ZOOM</div>
+        <!-- COMPRAR -->
+        <main>
+
+            <div class="imagen_box">
+                <img src="img/zapatilla.png" alt="zoomx">
+            </div>
+
+            <div class="info_producto">
+                <div class="precio"><span>$99.99</span></div>
+
+                <div class="detalles_producto">
+
+                    <div class="formulario">
+                        <label for="colour">Color</label>
+                        <select name="colour" id="colour">
+                            <option>Escoge un color</option>
+                            <option value="rojo">Rojo</option>
+                            <option value="negro">Negro</option>
+                            <option value="blanco">Blanco</option>
+                        </select>
+
+                        <label for="size">Talle</label>
+                        <select name="size" id="size">
+                            <option>Escoge un talle</option>
+                            <option value="39">39</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="carrito">
+                    <div class="cantidad">
+                        <input type="number" placeholder="1" vlaue="1" min="1" max="5">
+                    </div>
+
+                    <button>Agregar al carro</button>
+                </div>
+
+                <div class="descrpcion_producto">
+                    <h3>Descripcion</h3>
+
+                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ea neque odit nulla et dolorem quod veniam corporis harum officiis pariatur.</P>
+                </div>
+            </div>
+        </main>
+        
+    </section>
+    
+</body>
+</html>

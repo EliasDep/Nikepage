@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 100px 0;
+    background: linear-gradient(to bottom, #d509a0, #ff606e);
+}
+
+section::before {
+    content: 'ZOOMX';
+    position: absolute;
+    font-size: 20vw;
+    color: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    margin-top: 20vh;
+}
+
+
+
+/* MENU NAVEGACION */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -40px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+section .nav_links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+section .nav_links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section .nav_links ul li a:hover {
+    color: #111;
+}
+
+
+
+/* COMPRAR */
+
+.titulo {
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+main {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+main .imagen_box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 30px;
+}
+
+main .info_producto {
+    display: flex;
+    flex-direction: column;
+}
+
+.info_producto .precio {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.info_producto .detalles_producto .formulario {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_producto .detalles_producto .formulario select{
+    width: 80%;
+}
+
+.info_producto .carrito {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.info_producto .carrito .cantidad {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.info_producto .carrito button {
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.info_producto .carrito button:hover {
+    border-radius: 16px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    section {
+        padding: 40px;
+        overflow-x: hidden;
+    }
+
+    section::before {
+        font-size: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
+    /* MENU NAVEGACION */
+
+    header {
+        padding: 20px 40px;
+    }
+
+
+
+    .titulo {
+        margin-top: 100px;
+    }
+}
+
+
+
+@media (max-width: 440px) {
+
+    header {
+        flex-direction: column;
+    }
+
+}

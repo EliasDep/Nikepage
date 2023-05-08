@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 100px 0;
+    background: linear-gradient(to bottom, #d509a0, #ff606e);
+}
+
+section::before {
+    content: 'ZOOMX';
+    position: absolute;
+    font-size: 20vw;
+    color: rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    margin-top: 20vh;
+}
+
+
+
+/* MENU NAVEGACION */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: -40px;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+section .nav_links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+section .nav_links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section .nav_links ul li a:hover {
+    color: #111;
+}
+
+
+
+/* TARJETA SESION */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .tarjeta {
+    text-align: center;
+    padding: 32px;
+    background-color: #fff;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.05);
+    border-radius: 32px;
+    z-index: 10;
+}
+
+.tarjeta .header h3 {
+    font-weight: 600;
+    margin: 20px 0 22px 0;
+}
+
+.tarjeta .info fieldset {
+    border: none;
+    text-align: left;
+    position: relative;
+    margin-top: 25px;
+}
+
+.tarjeta .info fieldset label input {
+    display: block;
+    width: 336px;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 3px 0 0 0;
+    outline: none;
+    text-indent: 15px;
+    font-size: 14px;
+}
+
+.tarjeta .info a {
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+    text-align: right;
+    color: #000;
+    margin: 8px 0 16px 0;
+}
+
+.tarjeta p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.tarjeta p a {
+    color: #000;
+}
+
+.tarjeta button {
+    padding: 10px 30px;
+    color: #000;
+    background-color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tarjeta button:hover {
+    border-radius: 16px;
+}
+
+
+
+@media (max-width: 767px) {
+
+    section {
+        padding: 40px;
+        overflow-x: hidden;
+    }
+
+    section::before {
+        font-size: 20vh;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+
+    /* MENU NAVEGACION */
+
+    header {
+        padding: 20px 40px;
+    }
+
+
+
+    /* INICIO */
+
+    .tarjeta {
+        margin-top: 100px;
+    }
+}
+
+
+
+@media (max-width: 440px) {
+
+    header {
+        flex-direction: column;
+    }
+
+}
